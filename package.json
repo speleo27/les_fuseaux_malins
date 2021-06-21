@@ -1,0 +1,30 @@
+{
+  "name": "dentelle",
+  "version": "1.0.0",
+  "description": "site de dentelle aux fuseaux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/speleo27/les_fuseaux_malins.git"
+  },
+  "keywords": [
+    "fuseaux",
+    "dentelle",
+    "cour",
+    "de",
+    "dentelle"
+  ],
+  "author": "Rossi sebastien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/speleo27/les_fuseaux_malins/issues"
+  },
+  "homepage": "https://github.com/speleo27/les_fuseaux_malins#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "sass": "^1.35.1"
+  }
+}
