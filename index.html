@@ -24,41 +24,39 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="index.html">
-          <img src="src/img/LesFuseauxMalins.svg" alt="logo des fuseaux malin" width="200" height="200"></a>
+          <img src="src/img/LesFuseauxMalins.svg" alt="logo des fuseaux malin" width="75" height="75"></a>
+      </div>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="mobileMenu">
+          <ul>
+            <li>
+              <a class="btn buttonMenu mb-2 " href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a class="btn buttonMenu mb-2"  href="view/event.html">Evenement</a>
+            </li>
+            <li>
+              <!-- Default dropright button -->
+              <div class="btn-group dropend">
+                <button type="button" class="btn buttonMenu dropdown-toggle" id="dropMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Nos amis
+                </button>
+                <ul class="dropdown-menu py-0" aria-labelledby="dropMenu" id="friendsLink1">
+                  <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Sebourg</a></li>
+                  <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Caen</a></li>
+                  <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Mirecourt</a></li>
+                  <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Bayeux</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="mobileMenu">
-        <ul>
-          <li>
-            <a class="btn buttonMenu mb-2 " href="index.html">Accueil</a>
-          </li>
-          <li>
-            <a class="btn buttonMenu mb-2"  href="view/event.html">Evenement</a>
-          </li>
-          <li>
-            <!-- Default dropright button -->
-            <div class="btn-group dropend">
-              <button type="button" class="btn buttonMenu dropdown-toggle" id="dropMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Nos amis
-              </button>
-              <ul class="dropdown-menu py-0" aria-labelledby="dropMenu" id="friendsLink1">
-                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Sebourg</a></li>
-                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Caen</a></li>
-                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Mirecourt</a></li>
-                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Bayeux</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
     <div class="wrapper d-flex flex-row">
-
-      <header>
-
-      <div class="sidebar-header flex-column">
-        <nav class="navbar " id="laptopMenu">
+    <header>
+      <div class="sidebar-header flex-column" id="laptopMenu" >
+        <nav class="navbar " >
           <ul >
             <li>
               <a class="navbar-brand" href="index.html">
@@ -88,7 +86,7 @@
           </ul>
         </nav>
       </div>
-  </header>
+    </header>
   <main class="flex-fill">
     <div class="container">
       <div class="row">
@@ -107,7 +105,7 @@
                   <img src="src/img/1280px-DentellièreSoyotte.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="src/img/1920px-Carolus_-Private_Collection_-_bloemwerk.jpg" class="d-block w-100" alt="...">
+                  <img src="src/img/1920px-Carolus_-Private_Collection_-_bloemwerk.jpg" class="d-block w-100" alt="..." max-width="1280px">
                 </div>
                 <div class="carousel-item">
                   <img src="src/img/Royal_Lace_detail.jpg" class="d-block w-100" alt="...">
@@ -129,7 +127,9 @@
       </div>
   </main>
 </div>
-
+<footer>
+  <p id="footer" class="copyright text text-center">Les fuseaux malins 2021 - site réalisé par Rossi Sébastien - <a href="">Mentions légales</a></p>
+</footer>
 
     
 </body>

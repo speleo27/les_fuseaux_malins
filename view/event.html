@@ -18,14 +18,49 @@
 <div class="title container-fluid">
   <h1  class="headers text-center">Les Fuseaux Malins</h1>
 </div>
+<nav class="navbar navbar-dark" id="phoneMenu">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html">
+      <img src="../../src/img/LesFuseauxMalins.svg" alt="logo des fuseaux malin" width="75" height="75"></a>
+  </div>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="mobileMenu">
+      <ul>
+        <li>
+          <a class="btn buttonMenu mb-2 " href="../index.html">Accueil</a>
+        </li>
+        <li>
+          <a class="btn buttonMenu mb-2"  href="event.html">Evenement</a>
+        </li>
+        <li>
+          <!-- Default dropright button -->
+          <div class="btn-group dropend">
+            <button type="button" class="btn buttonMenu dropdown-toggle" id="dropMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Nos amis
+            </button>
+            <ul class="dropdown-menu py-0" aria-labelledby="dropMenu" id="friendsLink1">
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Sebourg</a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Caen</a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Mirecourt</a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Bayeux</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <div class="wrapper d-flex flex-row">
   <header>
-    <div class="sidebar-header flex-column">
-      <nav class="navbar ">
+    <div class="sidebar-header flex-column" id="laptopMenu" >
+      <nav class="navbar " >
         <ul >
           <li>
-            <a class="navbar-brand" href="../index.html">
-              <img src="../src/img/LesFuseauxMalins.svg" alt="logo des fuseaux malin" width="200" height="200">
+            <a class="navbar-brand" href="index.html">
+              <img src="../../src/img/LesFuseauxMalins.svg" alt="logo des fuseaux malin" width="200" height="200">
             </a>
           </li>
           <li>
@@ -37,14 +72,14 @@
           <li>
             <!-- Default dropright button -->
             <div class="btn-group dropend">
-              <button type="button" class="btn buttonMenu  dropdown-toggle" id="dropMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button type="button" class="btn buttonMenu dropdown-toggle" id="dropMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Nos amis
               </button>
               <ul class="dropdown-menu py-0" aria-labelledby="dropMenu" id="friendsLink">
-                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Sebourg</a></li>
-                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Caen</a></li>
-                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Mirecourt</a></li>
-                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Bayeux</a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="">Sebourg</a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="">Caen</a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="">Mirecourt</a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="">Bayeux</a></li>
               </ul>
             </div>
           </li>
@@ -54,10 +89,11 @@
   </header>
   <main class="flex-fill">
     <div class="container">
-      <div class="row">
+      <div class="row  align-center">
         <div class="col">
-          <section class="col-3">
-            <div class="card align-center" style="width: 18rem;">
+          <h2 class="text-center">Les prochains événements</h2>
+          <section class="align-content-center">
+            <div class="card " style="width: 18rem;">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -65,7 +101,7 @@
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div class="card align-center" style="width: 18rem;">
+            <div class="card " style="width: 18rem;">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -73,7 +109,7 @@
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div class="card align-center" style="width: 18rem;">
+            <div class="card " style="width: 18rem;">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -81,7 +117,7 @@
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div class="card align-center" style="width: 18rem;">
+            <div class="card " style="width: 18rem;">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -89,7 +125,7 @@
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div class="card align-center" style="width: 18rem;">
+            <div class="card " style="width: 18rem;">
               <img src="..." class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
