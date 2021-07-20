@@ -1,6 +1,28 @@
 {
   "dependencies": {
     "bootstrap": "^5.0.2",
+    "cpx": "^1.5.0",
     "sass": "^1.35.2"
-  }
+  },
+  "name": "les_fuseaux_malins",
+  "description": "Site vitrine en cour de réalisation pour un association de dentelle aux fuseaux",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w --style=compressed src/scss/main.scss:src/css/main.css",
+    "js": "cpx \"node_modules/bootstrap/dist/js/*.{js,map}\" src/js/  "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/speleo27/les_fuseaux_malins.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/speleo27/les_fuseaux_malins/issues"
+  },
+  "homepage": "https://github.com/speleo27/les_fuseaux_malins#readme"
 }

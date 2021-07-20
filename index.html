@@ -6,28 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!--     integration of bootstrap css-->
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="src/css/main.css">
 <!--      integration of boostrap js-->
-    <script src="bootstrap.js"></script>
+    <script defer src="src/js/bootstrap.bundle.js"></script>
     <meta name="description" content="Site d'une association de dentelles aux fuseaux réalisant des exposition a travers l'europe, donnant aussi des cours les fuseaux malin a pour but de continuer la transmission des savoir d'antant">
 
     <title>Cours de dentelles aux fuseaux Aube</title>
 </head>
 <body>
-  <header>
-
     <div class="title container-fluid">
       <h1  class="headers text-center">Les Fuseaux Malins</h1>
     </div>
-    <div class="nav">
+    <div class="wrapper d-flex flex-row">
+      <nav class="navbar navbar-dark" id="phoneMenu">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="src/img/LesFuseauxMalins.svg" alt="logo des fuseaux malin" width="200" height="200">
+        </div>
+      </nav>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="mobileMenu">
+          <ul>
+            <li>
+              <a class="btn buttonMenu mb-2 " href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a class="btn buttonMenu mb-2"  href="view/event.html">Evenement</a>
+            </li>
+            <li>
+              <!-- Default dropright button -->
+              <div class="btn-group dropend">
+                <button type="button" class="btn buttonMenu dropdown-toggle" id="dropMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Nos amis
+                </button>
+                <ul class="dropdown-menu py-0" aria-labelledby="dropMenu" id="friendsLink1">
+                  <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Sebourg</a></li>
+                  <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Caen</a></li>
+                  <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Mirecourt</a></li>
+                  <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Bayeux</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <header>
 
-      <button class="border-rounded" >Accueil</button>
-
-    </div>
-
-
+      <div class="sidebar-header flex-column">
+        <nav class="navbar " id="laptopMenu">
+          <ul >
+            <li>
+              <a class="navbar-brand" href="index.html">
+                <img src="src/img/LesFuseauxMalins.svg" alt="logo des fuseaux malin" width="200" height="200">
+              </a>
+            </li>
+            <li>
+              <a class="btn buttonMenu mb-2 " href="index.html">Accueil</a>
+            </li>
+            <li>
+              <a class="btn buttonMenu mb-2"  href="view/event.html">Evenement</a>
+            </li>
+            <li>
+              <!-- Default dropright button -->
+              <div class="btn-group dropend">
+                <button type="button" class="btn buttonMenu dropdown-toggle" id="dropMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Nos amis
+                </button>
+                <ul class="dropdown-menu py-0" aria-labelledby="dropMenu" id="friendsLink">
+                  <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Sebourg</a></li>
+                  <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Caen</a></li>
+                  <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Mirecourt</a></li>
+                  <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Bayeux</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
   </header>
+  <main class="flex-fill">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <section>
+            <article id="presentation">
+              <h2 class="text-center">Présentation de l'Association</h2>
+              <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam perferendis porro reiciendis repellat voluptate! Deleniti ducimus et illum ipsam iste laboriosam maxime molestias nemo numquam saepe? At cumque explicabo reiciendis?</span><span>Ab accusamus atque aut, consectetur debitis dicta doloremque dolores, doloribus eaque earum eius eligendi fuga ipsa iure laboriosam laudantium nam optio porro quis ratione reiciendis sapiente vel voluptas voluptatibus voluptatum?</span><span>Amet aspernatur assumenda atque beatae deserunt dolore, dolorem ea eaque eos error est et facilis incidunt laboriosam minus nisi nostrum officiis optio pariatur qui quis sunt tempora vel vitae voluptas?</span></p>
+
+            </article>
+          </section>
+          <section id="carroussel">
+            <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="src/img/1280px-DentellièreSoyotte.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="src/img/1920px-Carolus_-Private_Collection_-_bloemwerk.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="src/img/Royal_Lace_detail.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
+
+          </div>
+        </div>
+      </div>
+  </main>
+</div>
+
+
     
 </body>
 </html>
