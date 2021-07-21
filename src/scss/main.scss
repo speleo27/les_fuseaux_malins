@@ -76,7 +76,12 @@ p{
 .facebook{
   margin-right: 10px;
 }
-
+@media (max-width:1080px){
+  .social{
+    margin-top: 25px;
+    padding: 75px;
+  }
+}
 
 @media (max-width:800px) {
   #laptopMenu {

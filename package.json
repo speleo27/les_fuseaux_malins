@@ -8,7 +8,6 @@
   "description": "Site vitrine en cour de réalisation pour un association de dentelle aux fuseaux",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass -w --style=compressed src/scss/main.scss:src/css/main.css",
@@ -24,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/speleo27/les_fuseaux_malins/issues"
   },
-  "homepage": "https://github.com/speleo27/les_fuseaux_malins#readme"
+  "homepage": "https://github.com/speleo27/les_fuseaux_malins#readme",
+  "devDependencies": {}
 }
