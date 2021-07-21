@@ -33,11 +33,15 @@ li{
   border: none;
   font-size: 1rem;
   margin-bottom: 5px;
+
 }
-#presentation{
+#presentation,#contact{
   margin-top: 50px;
   border:solid 0.5px black;
   border-radius:0.2rem;
+}
+#linkWiki,#legals{
+  text-decoration: none;
 }
 #carroussel{
   margin-top: 50px;
@@ -63,6 +67,17 @@ li{
 footer{
   margin-top:15px;
 }
+p{
+  padding:10px;
+}
+.social{
+  padding:45px;
+}
+.facebook{
+  margin-right: 10px;
+}
+
+
 @media (max-width:800px) {
   #laptopMenu {
     display: none;
@@ -82,5 +97,11 @@ footer{
     border: none;
     font-size: 1rem;
     margin-bottom: 5px;
+  }
+  #carroussel{
+    width: 50%;
+  }
+  h2{
+    margin:auto;
   }
 }

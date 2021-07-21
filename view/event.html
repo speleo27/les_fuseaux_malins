@@ -8,6 +8,7 @@
   <!--     integration of bootstrap css-->
 
   <link rel="stylesheet" href="../src/css/main.css">
+  <link rel="shortcut icon" href="../src/img/favicon.ico">
   <!--      integration of boostrap js-->
   <script defer src="../src/js/bootstrap.bundle.js"></script>
   <meta name="description" content="Site d'une association de dentelles aux fuseaux réalisant des exposition a travers l'europe, donnant aussi des cours les fuseaux malin a pour but de continuer la transmission des savoir d'antant">
@@ -24,30 +25,44 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="index.html">
-      <img src="../../src/img/LesFuseauxMalins.svg" alt="logo des fuseaux malin" width="75" height="75"></a>
+      <img src="src/img/LesFuseauxMalins.svg" alt="logo des fuseaux malin" width="75" height="75"></a>
   </div>
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="mobileMenu">
       <ul>
         <li>
-          <a class="btn buttonMenu mb-2 " href="../index.html">Accueil</a>
+          <a class="btn buttonMenu mb-2 " href="index.html">Accueil</a>
         </li>
         <li>
-          <a class="btn buttonMenu mb-2"  href="event.html">Evenement</a>
+          <a class="btn buttonMenu mb-2"  href="view/event.html">Evenement</a>
         </li>
         <li>
           <!-- Default dropright button -->
-          <div class="btn-group dropend">
+          <div class="btn-group dropdown">
             <button type="button" class="btn buttonMenu dropdown-toggle" id="dropMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Nos amis
             </button>
             <ul class="dropdown-menu py-0" aria-labelledby="dropMenu" id="friendsLink1">
-              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Sebourg</a></li>
-              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Caen</a></li>
-              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Mirecourt</a></li>
-              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item">Bayeux</a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://dentellieres.com">Sebourg</a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.artdeladentelleenbourgogne.com/">Association Art de la dentelle en Bourgogne</a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://ddlj91.wix.com/dentellieredelajuine">Le Club des Dentellières de la Juine </a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://perso.wanadoo.fr/gilliodts-dentelle">Les Gilliodts dentellières d'Hondschoote </a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://dentellieresfrancheville.blogspot.fr/">Dentellières de Francheville  </a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://lesdiversespassionsdejosi.over-blog.com/">Dentelle au fil du Valchérie </a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.kantcentrum.com/">Kantcentrum Bruges </a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.midon-dentelle.fr/">Midon dentelles </a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.buhmanncreation.fr/">Buhmann créations </a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.dentelledemagali.com/">Magali Deboudard </a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.ladentelledupuy.com/">De Fil en Fuseau</a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.hoteldeladentelle.com/">Hotel de la dentelle Brioude  </a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.lacebooks.com/">Librairie Brugse Boekhandel </a></li>
+              <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.bart-francis.be/">Francis Busschaert  </a></li>
             </ul>
           </div>
+        </li>
+        <li class="social ">
+          <a class="facebook" href="#"><img src="src/img/facebook.svg" width="50px" height="50px" alt="Facebook"></a>
+          <a class="twitter " href="#"><img src="src/img/twitter.svg" width="50px" height="50px" alt="twitter"></a>
         </li>
       </ul>
     </div>
@@ -60,14 +75,14 @@
         <ul >
           <li>
             <a class="navbar-brand" href="index.html">
-              <img src="../../src/img/LesFuseauxMalins.svg" alt="logo des fuseaux malin" width="200" height="200">
+              <img src="src/img/LesFuseauxMalins.svg" alt="logo des fuseaux malin" width="200" height="200">
             </a>
           </li>
           <li>
-            <a class="btn buttonMenu mb-2 " href="../index.html">Accueil</a>
+            <a class="btn buttonMenu mb-2 " href="index.html">Accueil</a>
           </li>
           <li>
-            <a class="btn buttonMenu mb-2"  href="event.html">Evenement</a>
+            <a class="btn buttonMenu mb-2"  href="view/event.html">Evenement</a>
           </li>
           <li>
             <!-- Default dropright button -->
@@ -76,66 +91,93 @@
                 Nos amis
               </button>
               <ul class="dropdown-menu py-0" aria-labelledby="dropMenu" id="friendsLink">
-                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="">Sebourg</a></li>
-                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="">Caen</a></li>
-                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="">Mirecourt</a></li>
-                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="">Bayeux</a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://dentellieres.com">Sebourg</a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.artdeladentelleenbourgogne.com/">Association Art de la dentelle en Bourgogne</a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://ddlj91.wix.com/dentellieredelajuine">Le Club des Dentellières de la Juine </a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://perso.wanadoo.fr/gilliodts-dentelle">Les Gilliodts dentellières d'Hondschoote </a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://dentellieresfrancheville.blogspot.fr/">Dentellières de Francheville  </a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://lesdiversespassionsdejosi.over-blog.com/">Dentelle au fil du Valchérie </a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.kantcentrum.com/">Kantcentrum Bruges </a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.midon-dentelle.fr/">Midon dentelles </a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.buhmanncreation.fr/">Buhmann créations </a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.dentelledemagali.com/">Magali Deboudard </a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.ladentelledupuy.com/">De Fil en Fuseau</a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.hoteldeladentelle.com/">Hotel de la dentelle Brioude  </a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.lacebooks.com/">Librairie Brugse Boekhandel </a></li>
+                <li class="btnLink mb-2"><a class="btn buttonMenu dropdown-item" href="https://www.bart-francis.be/">Francis Busschaert  </a></li>
               </ul>
             </div>
+          </li>
+          <li class="social">
+            <a href="#"><img src="src/img/facebook.svg" width="50px" height="50px" alt="Facebook"></a>
+            <a href="#"><img src="src/img/twitter.svg" width="50px" height="50px" alt="twitter"></a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main class="flex-fill">
-    <div class="container">
-      <div class="row  align-center">
-        <div class="col">
-          <h2 class="text-center">Les prochains événements</h2>
-          <section class="align-content-center">
-            <div class="card " style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card " style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card " style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card " style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card " style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </section>
+    <main class="flex-fill">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center mt-2 mb-2">Les prochains événements</h2>
+          </div>
         </div>
+        <section class="event-cards">
+          <div class="row mt-2">
+            <div class="col-4 col-sm">
+            </div>
+            <div class="col-4 col-sm">
+              <div class="card " style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-sm">
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-4 col-sm">
+            </div>
+            <div class="col-4 col-sm">
+              <div class="card " style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-sm">
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-4 col-sm">
+            </div>
+            <div class="col-4 col-sm">
+              <div class="card " style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary align-center">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-sm">
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
-  </main>
-</div>
+    </main>
+  </div>
+  <footer>
+    <p id="footer" class="copyright text text-center">Les fuseaux malins 2021 - site réalisé par Rossi Sébastien - <a id="legals" href="">Mentions légales</a></p>
+  </footer>
+</body>
+</html>
