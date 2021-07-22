@@ -5,14 +5,27 @@ $secondary-color:#00C3ffff;
 $font:'Dancing Script';
 
 
-h1,h2,h3{
+h1, h2, h3 {
   font-family: $font;
 }
-nav{
-  min-width: 250px;
-  height: 100vh;
-  border-radius: 0.5rem;
-  background-color: $secondary-color;
+
+h1 {
+  margin-left: -25px;
+}
+
+nav {
+  @media screen and (min-width: 800px) {
+    min-width: 250px;
+    height: 100vh;
+    border-radius: 0.5rem;
+    background-color: $secondary-color;
+  }
+  @media screen and (max-width: 800px) {
+    min-width: 50px;
+    height: 0.4rem;
+    border-radius: 0.5rem;
+    background-color: $secondary-color;
+  }
 
 }
 li{
@@ -37,34 +50,47 @@ li{
   border:solid 0.5px black;
   border-radius:0.2rem;
 }
-#information{
+#information {
   margin-top: 50px;
-  border:solid 0.5px black;
-  border-radius:0.2rem;
+  border: solid 0.5px black;
+  border-radius: 0.2rem;
+
+  h3 {
+    color: $primary-color;
+  }
+
+  p {
+    margin-top: 25px;
+  }
 }
-#linkWiki,#legals{
+
+#linkWiki, #legals {
   text-decoration: none;
 }
-#carroussel{
-  margin-top: 50px;
-  border-radius:0.2rem;
-  border: solid 0.5px black;
 
+#carroussel {
+  @media screen and (min-width: 800px) {
+    margin-top: 50px;
+    border-radius: 0.2rem;
+    border: solid 0.5px black;
+  }
 }
-#carroussel > div >div > div > img{
-  width: 1080px;
-  height: 1920px;
-}
-.navabar-toggler{
-  background-color:$primary-color;
+
+.navabar-toggler {
+  background-color: $primary-color;
 }
 .mobileMenu{
   background-color:$secondary-color;
   border-radius:0.2rem;
-
 }
-#phoneMenu{
-  display:none;
+#phoneMenu {
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
+  @media screen and (max-width: 800px) {
+    display: block;
+    height: 100%;
+  }
 }
 #footer{
   background-color:$primary-color;
@@ -88,43 +114,60 @@ p{
   font-size:1.2rem;
 }
 
-.erratum{
+.erratum {
   border: solid 0.5px black;
-  border-radius:0.2rem;
+  border-radius: 0.2rem;
 }
-@media (max-width:1080px){
-  .social{
+
+.social {
+  @media screen and (max-width: 1080px) {
     margin-top: 25px;
     padding: 75px;
   }
 }
 
-@media (max-width:800px) {
-  #laptopMenu {
+#laptopMenu {
+  @media screen and (max-width: 800px) {
     display: none;
   }
-  .nav {
-    min-width: 50px;
-    height: 0.4rem;
-    border-radius: 0.5rem;
-    background-color: $secondary-color;
+}
+
+#friendsLink1 {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+#carroussel {
+  @media screen and (max-width: 500px) {
+    display: none;
   }
-  #phoneMenu {
-    display: block;
-    height: 100%;
-  }
-  #friendsLink1 {
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    font-size: 1rem;
-    margin-bottom: 5px;
-  }
-  #carroussel > div >div > div > img{
-    width: 720px;
-    height: 1280px;
+  @media screen and (max-width: 600px) {
+    margin-top: 50px;
   }
 
-  h2{
-    margin:auto;
+  & > div {
+    & > div {
+      & > div {
+        & > img {
+          @media screen and (min-width: 800px) {
+            width: 1080px;
+            height: 1920px;
+          }
+          @media screen and (max-width: 800px) {
+            width: 720px;
+            height: 1280px;
+          }
+        }
+      }
+    }
   }
 }
+
+h2 {
+  @media screen and (max-width: 800px) {
+    margin: auto;
+  }
+}
+
