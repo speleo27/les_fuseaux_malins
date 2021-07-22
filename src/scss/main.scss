@@ -32,7 +32,12 @@ li{
   margin-bottom: 5px;
 
 }
-#presentation,#contact{
+#presentation ,#contact {
+  margin-top: 50px;
+  border:solid 0.5px black;
+  border-radius:0.2rem;
+}
+#information{
   margin-top: 50px;
   border:solid 0.5px black;
   border-radius:0.2rem;
@@ -44,6 +49,11 @@ li{
   margin-top: 50px;
   border-radius:0.2rem;
   border: solid 0.5px black;
+
+}
+#carroussel > div >div > div > img{
+  width: 1080px;
+  height: 1920px;
 }
 .navabar-toggler{
   background-color:$primary-color;
@@ -109,9 +119,11 @@ p{
     font-size: 1rem;
     margin-bottom: 5px;
   }
-  #carroussel{
-    width: 50%;
+  #carroussel > div >div > div > img{
+    width: 720px;
+    height: 1280px;
   }
+
   h2{
     margin:auto;
   }
